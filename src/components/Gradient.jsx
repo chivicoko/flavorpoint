@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 
-const Gradient = styled.div`
+const Gradient = styled(motion.div)`
 z-index: 3;
 position: absolute;
 width: 100%;

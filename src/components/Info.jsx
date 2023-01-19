@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-
-const Wrapper = styled(motion.div)`
-margin: 4rem 0rem;
+const Info = styled(motion.div)`
+    margin-left: 10rem;
 `;
 
-export default Wrapper;
+
+export default Info;
