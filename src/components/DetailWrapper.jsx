@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 const DetailWrapper = styled(motion.div)`
-    margin-top: 10rem;
+    margin-top: 6rem;
     margin-bottom: 5rem;
     display: flex;
 
@@ -17,10 +17,13 @@ const DetailWrapper = styled(motion.div)`
 
     li {
         font-size: 1.2rem;
-        line-height: 2.5rem;
+        line-height: 1.7rem;
     }
-    ul {
-        margin-top: 2rem;
+
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
 `;
 

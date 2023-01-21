@@ -5,8 +5,9 @@ const Button = styled.button`
     color: #313131;
     background: white;
     border: 2px solid black;
-    margin-right: 2rem;
+    margin-right: 1.5rem;
     font-weight: 600;
+    margin-bottom: 2rem;
 `;
 
 

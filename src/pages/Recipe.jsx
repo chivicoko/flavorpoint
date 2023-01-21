@@ -1,7 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Grid from '../components/Grid';
 import DetailWrapper from '../components/DetailWrapper';
 import Button from '../components/Button';
 import Info from '../components/Info';
@@ -41,14 +40,15 @@ function Recipe() {
             <h2>{details.title}</h2>
             <img src={details.image} alt={details.title} />
         </div>
+
         <Info>
             <Button className={activeTab === 'instructions' ? 'active' : ''} onClick={() => setActiveTab('instructions')}>Instructions</Button>
             <Button className={activeTab === 'ingredients' ? 'active' : ''}  onClick={() => setActiveTab('ingredients')}>Ingredients</Button>
             
             {activeTab === 'instructions' && (
                 <div>
-                    <h3 dangerouslySetInnerHTML={{ __html: details.summary }}></h3>   {/* converting api info that are displayed as html elements to normal texts */}
-                    <h3 dangerouslySetInnerHTML={{ __html: details.instructions }}></h3>   {/* converting api info that are displayed as html elements to normal texts */}
+                    <p dangerouslySetInnerHTML={{ __html: details.summary }}></p>   {/* converting api info that are displayed as html elements to normal texts */}
+                    <p dangerouslySetInnerHTML={{ __html: details.instructions }}></p>   {/* converting api info that are displayed as html elements to normal texts */}
                 </div>
             )}
 
