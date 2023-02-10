@@ -14,7 +14,7 @@ function App() {
       <Nav>
         <GiKnifeFork />
         <Logo to={"/"}>licious</Logo>
-      </Nav>
+        </Nav>
         <Search />
         <Category />
         <Pages />
