@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 import "@splidejs/splide/dist/css/splide.min.css";
 import Wrapper from './Wrapper';
 import Card from './Card';
@@ -35,16 +36,15 @@ function Popular() {
     <div>
         <Wrapper>
             <h3>Popular Picks</h3>
-            <Splide options={{perPage: 4, arrows: false, pagination: false, drag: "free", gap: "5rem"}}>
+            <Splide options={{perPage: 4, arrows: false, pagination: false, drag: "free", gap: ".1rem"}}>
                 {popular.map((recipe) => {
                     return (
-                        <SplideSlide key={recipe.id}>
+                        <SplideSlide key={recipe.id} className='custom__slide'>
                             <Card>
                                 <Link to={"/recipe/" + recipe.id}>
-                                    <p>{recipe.title}</p>
                                     <img src = {(recipe.image) ? recipe.image : 'https://via.placeholder.com/300x400'} alt={recipe.title} />
+                                    <p>{recipe.title}</p>
                                     {/* <img src = {(recipe.image) ? recipe.image : 'https://via.placeholder.com/150/000000/FFFFFF/?text=IPaddress.net'} alt={recipe.title} /> */}
-                                    <Gradient />
                                 </Link>
                             </Card>
                         </SplideSlide>

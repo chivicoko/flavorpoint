@@ -3,26 +3,28 @@ import styled from "styled-components";
 
 const CategoryLink = styled(NavLink)`
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+    gap: .5rem;
+    border-radius: 8px;
     margin-right: 2rem;
     text-decoration: none;
-    background: linear-gradient(35deg, #494949, #313131);
-    width: 6rem;
-    height: 6rem;
+    padding: .8rem 1rem;
     cursor: pointer;
-    transform: scale(0.8);
+    // transform: scale(0.8);
+
+    background: rgba(0, 0, 0, 0.6);
+    // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid orangered;
 
     h4 {
         color: white;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     svg {
         color: white;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     &.active {
         background: linear-gradient(to right, #f27121, #e94057);

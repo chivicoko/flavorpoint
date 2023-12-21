@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const List = styled(motion.div)`
 display: flex;
 justify-content: center;
-margin: 2rem 0;
+margin: 7rem 0 2rem;
 `;
 
 export default List;

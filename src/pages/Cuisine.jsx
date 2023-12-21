@@ -39,7 +39,7 @@ function Cuisine() {
     {/* <Grid animation={{opacity: 1}} initial={{opacity: 0}} transition={{duration: 0.5}}> */}
         {cuisine.map((item) => {
             return (
-                <CuisineCard key={item.id}>
+                <CuisineCard key={item.id} className='custom__slide'>
                     <Link to={"/recipe/" + item.id}>
                         <img src={item.image} alt='' />
                         <h4>{item.title}</h4>

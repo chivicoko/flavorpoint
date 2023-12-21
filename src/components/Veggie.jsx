@@ -36,16 +36,15 @@ function Veggie() {
     <div>
         <Wrapper>
             <h3>Our Vegetarian Picks</h3>
-            <Splide options={{perPage: 3, arrows: false, pagination: false, drag: "free", gap: "5rem"}}>
+            <Splide options={{perPage: 3, arrows: false, pagination: false, drag: "free", gap: "2rem"}}>
                 {veggie.map((recipe) => {
                     return (
-                        <SplideSlide key={recipe.id}>
+                        <SplideSlide key={recipe.id} className='custom__slide'>
                             <Card>
                                 <Link to={"/recipe/" + recipe.id}>
-                                    <p>{recipe.title}</p>
                                     <img src = {(recipe.image) ? recipe.image : 'https://via.placeholder.com/300x400'} alt={recipe.title} />
+                                    <p>{recipe.title}</p>
                                     {/* <img src = {(recipe.image) ? recipe.image : 'https://via.placeholder.com/150/000000/FFFFFF/?text=IPaddress.net'} alt={recipe.title} /> */}
-                                    <Gradient />
                                 </Link>
                             </Card>
                         </SplideSlide>
