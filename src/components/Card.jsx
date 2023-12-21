@@ -26,6 +26,10 @@ img {
     width: 100%;
     height: 70%;
     align-self: flex-start;
+    transition: all .3s linear;
+}
+a:hover img {
+    transform: scale(1.03);
 }
 p {
     z-index: 10;

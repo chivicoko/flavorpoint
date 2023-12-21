@@ -12,6 +12,11 @@ const CuisineCard = styled.div`
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     border: 1px solid rgba(0, 0, 0, 0.3);
+    transition: all .3s linear;
+    
+    :hover img {
+        transform: scale(1.03);
+    }
 
     img {
         width: 100%;
@@ -21,7 +26,7 @@ const CuisineCard = styled.div`
     a {
         text-decoration: none;
     }
-
+    
     h4 {
         text-align: center;
         padding: 1rem;
