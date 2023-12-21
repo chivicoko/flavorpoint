@@ -4,16 +4,16 @@ import { BrowserRouter } from "react-router-dom";
 import Search from "./components/Search";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { GiKnifeFork } from "react-icons/gi";
+// import { GiKnifeFork } from "react-icons/gi";
 
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Nav>
-        <GiKnifeFork />
-        <Logo to={"/"}>licious</Logo>
+        <Nav>
+          {/* <GiKnifeFork /> */}
+          <Logo to={"/flavorPoint"}>Flavor Point</Logo>
         </Nav>
         <Search />
         <Category />
