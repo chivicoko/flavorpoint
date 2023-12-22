@@ -8,6 +8,14 @@ const Button = styled.button`
     margin-right: 1.5rem;
     font-weight: 600;
     margin-bottom: 2rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    border: 2px solid transparent;
+    transition: all .3s linear;
+
+    :hover {
+        border: 2px solid orangered;
+    }
 `;
 
 

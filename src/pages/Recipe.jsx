@@ -22,21 +22,8 @@ function Recipe() {
     }, [params.id]);
 
   return (
-
-    // the search from the cuisine specific (italian, american, thai, japanese) apis requests requires payment before it can be granted.
-    // <Grid>
-    //     <h1>Failed to load resource!!!</h1>
-    //     <h3>Hello, <em>402 Error (Payment Reiqured!)</em></h3>
-    //     <h4>A request has been made for a cuisine with the id of <em><u>{params.id}</u></em>. But...</h4> <br />
-    //     <h4>"The cuisine specific (italian, american, thai, japanese) api requests requires payment before it can be granted."</h4> <br />
-    //     <em>If you make the required payment, go back to the code base, uncomment the code directly below this statement, and run the code again
-    //         <br />
-    //         It should give you the information you require!
-    //     </em>
-    // </Grid>
-
     <DetailWrapper>
-        <div>
+        <div className='title__img'>
             <h2>{details.title}</h2>
             <img src={details.image} alt={details.title} />
         </div>
@@ -47,8 +34,8 @@ function Recipe() {
             
             {activeTab === 'instructions' && (
                 <div>
-                    <p dangerouslySetInnerHTML={{ __html: details.summary }}></p>   {/* converting api info that are displayed as html elements to normal texts */}
-                    <p dangerouslySetInnerHTML={{ __html: details.instructions }}></p>   {/* converting api info that are displayed as html elements to normal texts */}
+                    <p dangerouslySetInnerHTML={{ __html: details.summary }}></p>
+                    <p dangerouslySetInnerHTML={{ __html: details.instructions }}></p>
                 </div>
             )}
 
@@ -62,7 +49,6 @@ function Recipe() {
         </Info>
     </DetailWrapper>
   )
-
 }
 
 export default Recipe;
