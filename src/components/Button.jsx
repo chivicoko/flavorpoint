@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 const Button = styled.button`
-    padding: 1rem 2rem;
-    color: #313131;
-    background: white;
+    padding: .6rem 1.6rem;
+    color: #fff;
+    background: linear-gradient(35deg, #494949, #313131);
     border: 2px solid black;
     margin-right: 1.5rem;
+    font-size: 15px;
     font-weight: 600;
     margin-bottom: 2rem;
     cursor: pointer;

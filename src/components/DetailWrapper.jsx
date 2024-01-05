@@ -8,8 +8,9 @@ const DetailWrapper = styled(motion.div)`
     display: flex;
 
     .active {
-        background: linear-gradient(35deg, #494949, #313131);
+        background: linear-gradient(35deg, red, orange);
         color: #fff;
+        border: 2px solid #fff;
     }
 
     .title__img {
