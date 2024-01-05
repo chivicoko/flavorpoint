@@ -3,7 +3,7 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import "@splidejs/splide/dist/css/splide.min.css";
 import Wrapper from './Wrapper';
 import Card from './Card';
-import Gradient from './Gradient';
+// import Gradient from './Gradient';
 import { Link } from 'react-router-dom';
 
 
@@ -28,9 +28,10 @@ function Veggie() {
             localStorage.setItem("veggie", JSON.stringify(data.recipes));
             setVeggie(data.recipes);
             
-            console.log(data.recipes);
+            // console.log(data.recipes);
         }  
     };
+    // console.log(veggie);
 
   return (
     <div>
