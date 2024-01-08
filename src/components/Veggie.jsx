@@ -37,7 +37,7 @@ function Veggie() {
     <div>
         <Wrapper>
             <h3>Our Vegetarian Picks</h3>
-            <Splide options={{perPage: 3, arrows: false, pagination: false, drag: "free", gap: "2rem"}}>
+            <Splide options={{perPage: 3, arrows: true, pagination: false, drag: "free", gap: "2rem"}}>
                 {veggie.map((recipe) => {
                     return (
                         <SplideSlide key={recipe.id} className='custom__slide'>

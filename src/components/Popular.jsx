@@ -36,7 +36,7 @@ function Popular() {
     <div>
         <Wrapper>
             <h3>Popular Picks</h3>
-            <Splide options={{perPage: 4, arrows: false, pagination: false, drag: "free", gap: ".1rem"}}>
+            <Splide options={{perPage: 4, arrows: true, pagination: false, drag: "free", gap: ".1rem"}}>
                 {popular.map((recipe) => {
                     return (
                         <SplideSlide key={recipe.id} className='custom__slide'>

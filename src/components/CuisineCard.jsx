@@ -27,7 +27,7 @@ const CuisineCard = styled.div`
         text-decoration: none;
     }
     
-    h4 {
+    a h4 {
         text-align: center;
         padding: 1rem;
     }
