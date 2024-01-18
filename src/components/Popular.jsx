@@ -4,7 +4,6 @@ import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 import "@splidejs/splide/dist/css/splide.min.css";
 import Wrapper from './Wrapper';
 import Card from './Card';
-import Gradient from './Gradient';
 import { Link } from 'react-router-dom';
 
 function Popular() {
@@ -16,7 +15,6 @@ function Popular() {
     }, []);
 
     const getPopular = async () => {
-
         const check = localStorage.getItem("popular");
 
         if (check) {
@@ -26,9 +24,7 @@ function Popular() {
             const data = await api.json();
 
             localStorage.setItem("popular", JSON.stringify(data.recipes));
-            setPopular(data.recipes);
-            
-            // console.log(data.recipes);
+            setPopular(data.recipes);            
         }  
     };
 

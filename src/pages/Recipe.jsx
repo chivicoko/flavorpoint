@@ -15,6 +15,7 @@ function Recipe() {
         const api = await fetch(`https://api.spoonacular.com/recipes/${params.id}/information/?apiKey=${process.env.REACT_APP_API_KEY}`);
         const detailData = await api.json();
         setDetails(detailData);
+        // console.log(detailData);
     };
 
     useEffect(() => {
@@ -26,6 +27,14 @@ function Recipe() {
         <div className='title__img'>
             <h2>{details.title}</h2>
             <img src={details.image} alt={details.title} />
+            {/* {details.diets.map((diet) => (
+                <p>{diet}</p>
+            ))} */}
+            {/* <div className='more__details'>
+                <p>Gluten Free? <span>{details.glutenFree === true ? 'YES!' : 'NO'}</span></p>
+                <p>Dairy Free? <span>{details.dairyFree === true ? 'YES!' : 'NO'}</span></p>
+                <p>Vegan? <span>{details.vegan === true ? 'YES!' : 'NO'}</span></p>
+            </div> */}
         </div>
 
         <Info>

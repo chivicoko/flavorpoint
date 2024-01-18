@@ -13,6 +13,7 @@ function Cuisine() {
         const data = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&cuisine=${name}`);
         const recipes = await data.json();
         setCuisine(recipes.results);
+        // console.log(recipes.results);
     };
 
     useEffect(() => {
@@ -35,8 +36,8 @@ function Cuisine() {
     // </Grid>
 
 
-    <Grid>
-    {/* <Grid animation={{opacity: 1}} initial={{opacity: 0}} transition={{duration: 0.5}}> */}
+    // <Grid>
+    <Grid animate={{opacity: 1}} initial={{opacity: 0}} exit={{opacity: 0}} transition={{duration: 0.5}}>
         {cuisine.map((item) => {
             return (
                 <CuisineCard key={item.id} className='custom__slide'>

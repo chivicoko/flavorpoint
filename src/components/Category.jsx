@@ -1,6 +1,4 @@
-import { FaPizzaSlice, FaHamburger } from "react-icons/fa";
-import { GiNoodles, GiChopsticks } from "react-icons/gi";
-import { NavLink } from "react-router-dom";
+import { FaFlag, FaFlagUsa, FaFlagCheckered, FaRegFlag } from "react-icons/fa";
 import List from "./List";
 import CategoryLink from "./CategoryLink";
 
@@ -10,19 +8,20 @@ function Category() {
   return (
     <List>
       <CategoryLink to={'/cuisine/Italian'}>
-        <FaPizzaSlice />
+        <FaFlag />
+        {/* <FaPizzaSlice /> */}
         <h4>Italian</h4>
       </CategoryLink>
       <CategoryLink to={'/cuisine/American'}>
-        <FaHamburger />
+        <FaFlagUsa />
         <h4>American</h4>
       </CategoryLink>
       <CategoryLink to={'/cuisine/Thai'}>
-        <GiNoodles />
+        <FaFlagCheckered />
         <h4>Thai</h4>
       </CategoryLink>
       <CategoryLink to={'/cuisine/Japanese'}>
-        <GiChopsticks />
+        <FaRegFlag />
         <h4>Japanese</h4>
       </CategoryLink>
     </List>

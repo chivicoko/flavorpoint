@@ -25,6 +25,23 @@ const DetailWrapper = styled(motion.div)`
         img {
             border-radius: 1rem;
         }
+        .more__details {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+        .more__details p {
+            display: flex;
+            justify-content: flex-start;
+            gap: 3rem;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+        .more__details p span {
+            color: lemonchiffon;
+        }
     }
 
 
