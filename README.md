@@ -1,4 +1,4 @@
-# lavorPoint - Restaurant management and Recipes
+# FlavorPoint - Restaurant management and Recipes
 
 This project can be viewed at [FlavorPoint](https://chivicoko.github.io/flavorpoint/).
 
