@@ -22,4 +22,4 @@ Gets in all the necessary depencies for the app to run successully
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000/flavorpoint](http://localhost:3000/flavorpoint) to view it in your browser.
+Open [http://localhost:3000/flavorpoint](http://localhost:3000/flavorpoint) to view it in your browser
